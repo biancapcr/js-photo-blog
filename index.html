@@ -8,20 +8,36 @@
     <!--- CSS --->
     <link rel="stylesheet" href="./css/style.css">
     <!--- Google Fonts --->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@400..700&family=Sometype+Mono:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
     <!--- Axios --->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <title>Photo Blog</title>
 </head>
 <body>
+  <!-- header -->
+  <header class="header">
+    <h1>ESTATE '24</h1>
+  </header>
 
-
-
-
-
-
-
-
-    
+ <!-- main -->
+<main class="main photo-wall">
+  <div class="container-fluid">
+    <div class="row justify-content-center gx-5 gy-4" id="photo-row">
+      <div class="col-6 col-md-4 col-lg-2 mt-5">
+        <div class="card-wrapper">
+          <img class="pin" src="./img/pin.svg" alt="puntina">
+          <div class="card" style="width: 340px">
+            <img class="photo" src="./img/pic-1.jpeg" alt="summer">
+            <div class="caption"><p>Costa</p></div>
+          </div>
+        </div>
+      </div>
+      <!-- lo stesso .col-6.col-md-4.col-lg-2 verrà clonato 5 volte da JS -->
+    </div>
+  </div>
+</main>
     <script src="./js/script.js"></script>
 </body>
 </html>
