@@ -50,6 +50,7 @@ header h1 {
   width: 100%;
   aspect-ratio: 1 / 1;
   object-fit: cover;
+  cursor: pointer;
 }
 
 /* =============== pin =============== */

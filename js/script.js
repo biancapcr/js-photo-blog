@@ -34,6 +34,23 @@ document.addEventListener('DOMContentLoaded', () => {
 `;
         // Inserisco la colonna appena creata dentro la row
         container.appendChild(col);
+    });
+      // 4) Setup overlay (Milestone 2 & 3)
+      const overlay    = document.getElementById('overlay');
+      const overlayImg = document.getElementById('overlay-img');
+      const closeBtn   = document.getElementById('overlay-close');
+
+      // Milestone 2+3: cliccando sulla .photo apro overlay e mostro quella stessa src
+      container.addEventListener('click', e => {
+        const clicked = e.target.closest('.photo');
+        if (!clicked) return;
+        overlayImg.src = clicked.src;
+        overlay.classList.remove('hidden');
       });
-    })
+
+      // Milestone 2: chiudo overlay al click sul bottone
+      closeBtn.addEventListener('click', () => {
+        overlay.classList.add('hidden');
+      });
+    });
 });
