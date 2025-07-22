@@ -121,3 +121,7 @@ header h1 {
   border: 5px solid white;
   z-index: 10;
 }
+
+.overlay.hidden {
+  display: none;
+}
