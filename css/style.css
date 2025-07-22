@@ -19,7 +19,7 @@ header {
 header h1 {
   font-family: 'Edu TAS Beginner', cursive;
   font-weight: 600;
-  font-size: 50px;
+  font-size: 60px;
   color: #000;
   margin-bottom: 15px;
 }
@@ -69,9 +69,19 @@ header h1 {
 
 .caption p {
   margin: 0;
-  font-family: 'Sometype Mono', monospace;
+  font-family: 'Edu Tas Beginner', sans-serif;
   font-style: italic;
-  font-size: 20px;
-  font-weight: 700;
+  margin-top: 10px;
+  font-size: 25px;
+  font-weight: bolder;
   line-height: 18px;
+  text-transform: uppercase;
+}
+.caption time, .caption .date {
+  display: block;              
+  font-family: 'Sometype Mono', monospace;
+  font-size: 17px;  
+  font-weight: 500;                         
+  color: #666;                
+  margin-top: 5px;                         
 }

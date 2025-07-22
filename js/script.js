@@ -17,21 +17,21 @@ document.addEventListener('DOMContentLoaded', () => {
         const col = document.createElement('div');
         col.className = 'col-12 col-sm-6 col-md-4'; 
         col.innerHTML = `
-          <div class="card-wrapper">
-            <img src="./img/pin.svg" class="pin" alt="puntina">
-            <div class="card"; position: relative;">
-              <img 
-                src="${picture.url}" 
-                class="photo" 
-                alt="${picture.title || 'Foto'}"
-              >
-              <div class="caption">
-                <p>${picture.title}</p>
-                <time>${picture.date}</time>
-              </div>
-            </div>
-          </div>
-        `;
+    <div class="card-wrapper">
+    <img src="./img/pin.svg" class="pin" alt="puntina">
+    <div class="card"; position: relative;">
+      <img
+        src="${picture.url}"
+        class="photo"
+        alt="${picture.title}"
+      >
+      <div class="caption">
+        <time class="date" datetime="${picture.date}">${picture.date}</time>
+        <p class="title">${picture.title}</p>
+      </div>
+    </div>
+  </div>
+`;
         // Inserisco la colonna appena creata dentro la row
         container.appendChild(col);
       });
