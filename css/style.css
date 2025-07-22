@@ -138,5 +138,5 @@ header h1 {
 /* quando il puntatore è sopra la card, la pin sparisce */
 .card-wrapper:hover .pin {
   opacity: 0;
-  transition: opacity 0.3s ease;
+  transition: opacity 0.1s ease;
 }
