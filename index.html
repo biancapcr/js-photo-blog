@@ -16,13 +16,13 @@
     <title>Photo Blog</title>
 </head>
 <body>
-  <!-- header -->
+  <!--- header --->
   <header class="header text-center">
     <h1>ESTATE '24</h1>
   </header>
 
- <!-- main -->
-<main class="main photo-wall">
+ <!--- main --->
+ <main class="main photo-wall">
   <div class="container px-4">
     <div class="row justify-content-center gy-5 pt-5" id="photo-row">
       <div class="col-12 col-sm-6 col-md-4">
@@ -37,6 +37,14 @@
     </div>
   </div>
 </main>
-    <script src="./js/script.js"></script>
+
+  <!--- overlay --->
+  <div id="overlay" class="overlay hidden">
+    <button id="overlay-close" class="overlay-close">&times;</button>
+    <img id="overlay-img" class="overlay-img" src="" alt="Anteprima foto">
+  </div>
+
+  <!--- js --->
+<script src="./js/script.js"></script>
 </body>
 </html>
