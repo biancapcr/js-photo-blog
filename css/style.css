@@ -126,3 +126,17 @@ header h1 {
 .overlay.hidden {
   display: none;
 }
+/* hover effect su .photo */
+.card-wrapper .photo {                       
+  transition: transform 0.3s ease, box-shadow 0.3s ease;            
+}
+
+.card-wrapper .photo:hover {
+  transform: scale(1.1) rotate(10deg); 
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+/* quando il puntatore è sopra la card, la pin sparisce */
+.card-wrapper:hover .pin {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
